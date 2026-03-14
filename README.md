@@ -175,3 +175,156 @@ An additional variable `weight_source` tracks which measurement was used.
 
 ## Definition of Coverage
 
+
+
+Eligibility criteria:
+
+- Neonates weighing **1000–1499 g**
+- Known CPAP administration status
+
+---
+
+## Hospital-Level Coverage
+
+CPAP coverage was calculated for each hospital.
+
+The **hospital ranking plot** shows substantial variation between facilities.
+
+Some hospitals report **coverage above 90%**, while others fall below **30%**.
+
+Possible explanations include:
+
+- Differences in CPAP equipment availability
+- Clinical training and staffing
+- Neonatal unit capacity
+- Clinical treatment protocols
+
+---
+
+# Visualization
+
+## Hospital Ranking
+
+![Hospital Ranking](outputs/CPAP_hospital_ranking.png)
+
+This figure ranks hospitals from **lowest to highest CPAP coverage**, highlighting performance variation across facilities.
+
+---
+
+## Coverage Distribution
+
+![Coverage Histogram](outputs/CPAP_coverage_histogram.png)
+
+The histogram illustrates the distribution of CPAP coverage across hospitals.
+
+Most facilities cluster between **30% and 60% coverage**, indicating moderate program performance but significant room for improvement.
+
+---
+
+## Baseline vs Target
+
+![Baseline vs Target](outputs/NESTO360_targets_plot.png)
+
+This figure compares **2025 baseline coverage** with proposed **2028 targets**.
+
+---
+
+# D. Target Setting for 2028
+
+Targets were developed using a **benchmarking and equity-based approach**.
+
+Four rules were applied sequentially.
+
+---
+
+## Rule 1 — Peer Benchmark
+
+The **75th percentile of hospital CPAP coverage in 2025** was used as the benchmark.
+
+This reflects the performance achieved by top-performing hospitals and represents a realistic improvement level.
+
+---
+
+## Rule 2 — Equity Adjustment
+
+Hospitals with baseline coverage below **30%** received a **+30 percentage point increase**.
+
+This helps accelerate progress among low-performing facilities.
+
+---
+
+## Rule 3 — Minimum Floor
+
+A **minimum target of 60% coverage** was applied.
+
+No hospital should aim for coverage below this threshold by 2028.
+
+---
+
+## Rule 4 — Maximum Ceiling
+
+A ceiling of **95% coverage** was applied.
+
+Achieving 100% coverage may not be clinically realistic because some neonates may not require CPAP.
+
+---
+
+# Programmatic Implications
+
+The analysis highlights several important insights.
+
+### Large Variation Across Hospitals
+
+Coverage varies widely between hospitals, indicating unequal access to neonatal respiratory care.
+
+### Learning From High Performers
+
+Hospitals achieving high coverage demonstrate that strong performance is achievable within the program context.
+
+### Monitoring Progress
+
+The target framework allows monitoring of:
+
+- absolute improvement required
+- monthly improvement needed to reach targets by 2028
+
+---
+
+# Outputs Generated
+
+| Output | Description |
+|---|---|
+| `NEST360_outputs.xlsx` | Final dataset with derived variables |
+| `CPAP_hospital_ranking.png` | Hospital performance ranking |
+| `CPAP_coverage_histogram.png` | Distribution of CPAP coverage |
+| `NESTO360_targets_plot.png` | Baseline vs 2028 targets |
+
+---
+
+# Tools Used
+
+The analysis was conducted using:
+
+- **R**
+- **dplyr**
+- **tidyr**
+- **lubridate**
+- **ggplot2**
+- **readxl**
+- **writexl**
+
+---
+
+# Author
+
+**Charles**
+
+Monitoring, Evaluation & Learning (MEAL) Manager  
+Data Analytics Specialist
+
+Experience in:
+
+- Digital MEL systems
+- Data quality assurance
+- Health program analytics
+- R, Python, SQL, and Power BI
